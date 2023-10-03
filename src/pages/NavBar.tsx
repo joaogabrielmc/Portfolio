@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { NavLinks } from "../data/Data";
+import { List } from "../components/List";
 import { NavLink } from "react-router-dom";
-import { ArrowCircleRight, CirclesFour, List } from "@phosphor-icons/react";
+import { ArrowCircleRight, CirclesFour } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import { Text } from "../components/Text";
 
@@ -28,7 +29,7 @@ const NavBar = () => {
   return (
     <header className="w-full h-auto bg-transparent overflow-x-hidden fixed z-50 top-0 left-0">
       <nav
-        className={`w-full lg:h-28 md:h-24 h-20 ${
+        className={`w-full lg:h-24 md:h-14 h-10 ${
           navBarColor ? "bg-zinc-900" : " bg-transparent"
         } lg:px-16 md:px-9 px-8 flex justify-between items-center`}
       >
@@ -79,8 +80,8 @@ const NavBar = () => {
           <section className="w-full px-4 py-6 flex flex-col gap-16">
             <div className="w-full flex pt-5 px-4 justify-between items-center">
               <Link to={`/`} className="font-extrabold text-2xl">
-                <span className=" text-white ">João</span>
-                <span className=" text-primary">Coelho</span>
+                <span className=" text-white ">Gym</span>
+                <span className=" text-primary">Nex</span>
               </Link>
               <div
                 className="hamburger text-white cursor-pointer"
