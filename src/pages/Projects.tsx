@@ -24,8 +24,6 @@ const Projects = () => {
     }
   }, []);
 
-  const youtubeURL = "https://www.youtube.com/";
-
   return (
     <section className="w-full h-auto flex items-center bg-darkGray">
       <main className="w-full flex flex-col justify-center items-center gap-5">

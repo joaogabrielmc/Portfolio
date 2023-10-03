@@ -1,8 +1,8 @@
 import About from "../pages/About";
-import Projects from "../pages/Projects";
 import HeroSection from "../pages/HeroSection";
 import Services from "../pages/Services";
-import Skills from "../pages/Skills";
+// import Projects from "../pages/Projects";
+// import Skills from "../pages/Skills";
 
 const Home = () => {
   return (
