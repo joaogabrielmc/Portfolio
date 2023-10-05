@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLinks } from "../data/Data";
 import { List } from "../components/List";
-import { NavLink } from "react-router-dom";
 import { ArrowCircleRight, CirclesFour } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
-import { Text } from "../components/Text";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -33,27 +30,22 @@ const NavBar = () => {
           navBarColor ? "bg-zinc-900" : " bg-transparent"
         } lg:px-16 md:px-9 px-8 flex justify-between items-center`}
       >
-        <Link
-          to={`/`}
+        <a
+          href={``}
           className="font-extrabold flex items-center relative md:text-2xl text-lg"
         >
-          <Text as="span" className="text-white">
-            Port
-          </Text>
-          <Text as="span" className="text-primary">
-            Fólio
-          </Text>
-        </Link>
+          {/* Inserir Logo */}
+        </a>
         <div className="lg:flex hidden items-center h-full gap-20">
           <ul className="flex items-center justify-center gap-4 relative  before:h-0.5 before:absolute before:bottom-0 before:left-0 before:bg-zinc-400">
             {NavLinks.map((navlink, index) => (
               <List className="w-full text-base" key={index}>
-                <NavLink
-                  to={navlink.url}
+                <a
+                  href={navlink.url}
                   className={`relative inline-block px-2 whitespace-nowrap text-white uppercase text-xs font-bold transition-all duration-200 hover:text-primary before:w-0 before:h-0.5 before:bg-gradient-to-r from-secondary to-primary `}
                 >
                   {navlink.name}
-                </NavLink>
+                </a>
               </List>
             ))}
           </ul>
@@ -79,10 +71,9 @@ const NavBar = () => {
         >
           <section className="w-full px-4 py-6 flex flex-col gap-16">
             <div className="w-full flex pt-5 px-4 justify-between items-center">
-              <Link to={`/`} className="font-extrabold text-2xl">
-                <span className=" text-white ">Gym</span>
-                <span className=" text-primary">Nex</span>
-              </Link>
+              <a to={`/`} className="">
+                {/* inserir Logo */}
+              </a>
               <div
                 className="hamburger text-white cursor-pointer"
                 onClick={handleToggle}
@@ -97,13 +88,13 @@ const NavBar = () => {
             <ul className="flex flex-col gap-3 pl-5">
               {NavLinks.map((navlink, index) => (
                 <List className="w-full text-base" key={index}>
-                  <NavLink
-                    to={navlink.url}
+                  <a
+                    href={navlink.url}
                     onClick={handleToggle}
                     className={`relative overflow-hidden inline-block text-white before:w-full before:h-0.5 before:bg-color2 before:absolute before:bottom-0 before:-left-full before:rounded-full before:transition-all before:duration-200 before:ease-in hover:before:left-0 `}
                   >
                     {navlink.name}
-                  </NavLink>
+                  </a>
                 </List>
               ))}
             </ul>

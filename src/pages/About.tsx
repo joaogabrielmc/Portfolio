@@ -7,14 +7,16 @@ import { AboutText } from "../data/Data";
 
 const About = () => {
   return (
-    <section className="w-full h-auto flex items-center md:justify-center md:pt-10 lg:pb-20 bg-darkGray">
+    <section
+      className="w-full h-auto flex items-center md:justify-center md:pt-10 lg:pb-20 bg-darkGray"
+      id="about"
+    >
       <motion.div
         variants={fadeIn("right", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.2 }}
-        className="flex flex-col items-center lg:flex-row lg:gap-5"
-        // md:gap-10 md:py-[108px] md:px-[183px] items-center
+        className="flex flex-col items-center lg:flex-row lg:gap-5 pt-16"
       >
         <Image
           alt={"Imag"}

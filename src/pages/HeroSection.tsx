@@ -3,7 +3,10 @@ import { fadeIn } from "../variants";
 
 const HeroSection = () => {
   return (
-    <section className="bg-site md:h-screen h-auto bg-cover bg-center py-10 flex justify-center">
+    <section
+      className="bg-site md:h-screen h-auto bg-cover bg-center py-10 flex justify-center"
+      id="home"
+    >
       <motion.div
         variants={fadeIn("down", 0.6)}
         initial="hidden"

@@ -1,9 +1,14 @@
+import { Card } from "../components/ServiceCard";
+import { ServicesData } from "../data/Data";
 import { fadeIn } from "../variants";
 import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <section className="w-full h-[auto] xl:p-15 p-20 flex justify-center bg-darkGray">
+    <section
+      className="w-full h-[auto] xl:p-15 p-20 flex justify-center bg-darkGray"
+      id="services"
+    >
       <div>
         {/* Tittle */}
         <motion.div
@@ -26,7 +31,7 @@ const Services = () => {
           viewport={{ once: false, amount: 0.0 }}
           className="mt-10"
         >
-          <div className="container mx-auto flex flex-col lg:flex-row gap-8">
+          {/* <div className="container mx-auto flex flex-col lg:flex-row gap-8">
             <div className="w fill bg-secondary/75 min-h-[200px] w-[300px] transition  duration-300  font-popp mx-auto items-center pb-6 rounded-b-[1.2rem] hover:scale-[1.2]">
               <p className="text-lg mb-3 bg-lblue w-[300px] flex items-center justify-center p-6 rounded-b-[1.5rem] drop-shadow-[0_5px_30px_rgba(0,0,0,1)]">
                 UI/UX Design
@@ -63,6 +68,13 @@ const Services = () => {
                 <li>Escaneabilidade.</li>
               </div>
             </div>
+          </div> */}
+          <div className="container mx-auto flex flex-col lg:flex-row gap-8">
+            {ServicesData.serviceList.map(
+              (item: { title: string; items: string[] }, index: number) => (
+                <Card key={index} title={item.title} listItems={item.items} />
+              )
+            )}
           </div>
         </motion.div>
       </div>
