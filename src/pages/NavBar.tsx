@@ -71,7 +71,7 @@ const NavBar = () => {
         >
           <section className="w-full px-4 py-6 flex flex-col gap-16">
             <div className="w-full flex pt-5 px-4 justify-between items-center">
-              <a to={`/`} className="">
+              <a href={``} className="">
                 {/* inserir Logo */}
               </a>
               <div

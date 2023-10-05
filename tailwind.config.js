@@ -24,7 +24,7 @@ export default {
         lblue: "#A1FFD0",
       },
       backgroundImage: {
-        site: "url('./src/assets/img/herobg.jpg')",
+        site: "url('/img/herobg.jpg')",
       },
     },
   },
