@@ -28,7 +28,7 @@ const Services = () => {
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.0 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="mt-10"
         >
           {/* <div className="container mx-auto flex flex-col lg:flex-row gap-8">

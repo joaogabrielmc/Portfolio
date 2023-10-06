@@ -42,7 +42,7 @@ const NavBar = () => {
               <List className="w-full text-base" key={index}>
                 <a
                   href={navlink.url}
-                  className={`relative inline-block px-2 whitespace-nowrap text-white uppercase text-xs font-bold transition-all duration-200 hover:text-primary before:w-0 before:h-0.5 before:bg-gradient-to-r from-secondary to-primary `}
+                  className={`relative inline-block px-2 whitespace-nowrap text-white uppercase text-xs font-bold transition-all duration-200 hover:text-primary`}
                 >
                   {navlink.name}
                 </a>

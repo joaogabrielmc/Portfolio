@@ -1,7 +1,7 @@
 import About from "../pages/About";
 import HeroSection from "../pages/HeroSection";
 import Services from "../pages/Services";
-// import Projects from "../pages/Projects";
+import Projects from "../pages/Projects";
 // import Skills from "../pages/Skills";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <About />
       <Services />
       {/* <Skills /> */}
-      {/* <Projects /> */}
+      <Projects />
     </>
   );
 };
