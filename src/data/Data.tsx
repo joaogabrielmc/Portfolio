@@ -58,3 +58,29 @@ export const ServicesData = {
     },
   ],
 };
+
+export const servicesCard = [
+  {
+    label: "UI/UX",
+    value: "UI/UX",
+    desc: [
+      {
+        title: "DESENHO",
+        description: "teste1",
+        imageUrl: "teste1",
+      },
+      {
+        title: "DESENHO1",
+        description: "teste12",
+        imageUrl: "teste12",
+      },
+      {
+        title: "DESENHO3",
+        description: "teste13",
+        imageUrl: "teste13",
+      },
+    ],
+  },
+];
+{
+}

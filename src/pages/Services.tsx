@@ -31,44 +31,6 @@ const Services = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="mt-10"
         >
-          {/* <div className="container mx-auto flex flex-col lg:flex-row gap-8">
-            <div className="w fill bg-secondary/75 min-h-[200px] w-[300px] transition  duration-300  font-popp mx-auto items-center pb-6 rounded-b-[1.2rem] hover:scale-[1.2]">
-              <p className="text-lg mb-3 bg-lblue w-[300px] flex items-center justify-center p-6 rounded-b-[1.5rem] drop-shadow-[0_5px_30px_rgba(0,0,0,1)]">
-                UI/UX Design
-              </p>
-              <div className="flex flex-col text-base font-roboto p-3 leading-[2] text-white">
-                <li>
-                  Esboço o produto para alinhar as necessidades do usuário.
-                </li>
-                <li>Transformo sua ideia para conceito em MVP.</li>
-                <li>Converto o design em uma aplicação web.</li>
-              </div>
-            </div>
-            <div className="w fill bg-secondary/75 min-h-[200px] w-[300px] transition  duration-300  font-popp mx-auto items-center pb-6 rounded-b-[1.2rem] hover:scale-[1.2]">
-              <p className="text-lg mb-3 bg-lblue w-[300px] flex items-center justify-center p-6 rounded-b-[1.5rem] drop-shadow-[0_5px_30px_rgba(0,0,0,1)]">
-                Desenvolvimento
-              </p>
-              <div className="flex flex-col text-base font-roboto p-3 leading-[2] text-white">
-                <li>Design Moderno.</li>
-                <li>Melhores Tecnologias.</li>
-                <li>Facilmente Personalizável.</li>
-                <li>Responsivo para Celular.</li>
-                <li>Robusto Fluxo de Trabalho.</li>
-              </div>
-            </div>
-            <div className="w fill bg-secondary/75 min-h-[200px] w-[300px] transition  duration-300  font-popp mx-auto items-center pb-6 rounded-b-[1.2rem] hover:scale-[1.2]">
-              <p className="text-lg mb-3 bg-lblue w-[300px] flex items-center justify-center p-6 rounded-b-[1.5rem] drop-shadow-[0_5px_30px_rgba(0,0,0,1)]">
-                Criação do Conteúdo
-              </p>
-              <div className="flex flex-col text-base font-roboto p-3 leading-[2] text-white">
-                <li>Planejamento.</li>
-                <li>Atento aos detalhes para impedir erros.</li>
-                <li>Conteúdo bem Organizado.</li>
-                <li>Múltiplos Blocos.</li>
-                <li>Escaneabilidade.</li>
-              </div>
-            </div>
-          </div> */}
           <div className="container mx-auto flex flex-col lg:flex-row gap-8">
             {ServicesData.serviceList.map(
               (item: { title: string; items: string[] }, index: number) => (

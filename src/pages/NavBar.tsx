@@ -59,8 +59,9 @@ const NavBar = () => {
       </nav>
 
       {/* Mobile Nav  */}
+
       <nav
-        className={`flex justify-end lg:hidden h-screen w-full bg-gray-950/90 fixed top-0  ${
+        className={`flex justify-end lg:hidden h-screen w-full bg-darkGray fixed top-0  ${
           open ? "right-0" : "-right-[120vw]"
         } transition-all duration-500 ease-out`}
       >
@@ -71,9 +72,6 @@ const NavBar = () => {
         >
           <section className="w-full px-4 py-6 flex flex-col gap-16">
             <div className="w-full flex pt-5 px-4 justify-between items-center">
-              <a href={``} className="">
-                {/* inserir Logo */}
-              </a>
               <div
                 className="hamburger text-white cursor-pointer"
                 onClick={handleToggle}

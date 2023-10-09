@@ -4,12 +4,12 @@ import { fadeIn } from "../variants";
 
 const Projects = () => {
   return (
-    <section className="w-full h-[100vh] bg-darkGray pt-16" id="portfolio">
+    <section className="w-full h-auto bg-darkGray pt-2" id="portfolio">
       <motion.div
         variants={fadeIn("up", 0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: false, amount: 0.1 }}
         className="h-full md:h-[500px]"
       >
         <CarouselWithContent />
