@@ -27,19 +27,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <Typography
             variant="lead"
             color="white"
-            className="mb-12 opacity-80 font-roboto"
+            className="mb-12 opacity-80 font-roboto text-sm md:text-base"
           >
             {description}
           </Typography>
           <div className="flex justify-center gap-2">
             <Button
-              size="lg"
+              size="sm"
               className="hover:scale-110 bg-primary text-black font-baimj flex items-center gap-1	"
             >
               Github <PiGithubLogoFill className="text-xl" />
             </Button>
             <Button
-              size="lg"
+              size="sm"
               color="white"
               variant="text"
               className="hover:scale-110 border-primary border-2 font-baimj text-primary flex items-center gap-1"

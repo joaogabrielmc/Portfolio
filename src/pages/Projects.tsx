@@ -4,7 +4,7 @@ import { fadeIn } from "../variants";
 
 const Projects = () => {
   return (
-    <section className="w-full h-auto bg-darkGray pt-2" id="portfolio">
+    <section className="w-auto h-auto bg-darkGray pt-2" id="portfolio">
       <motion.div
         variants={fadeIn("up", 0.2)}
         initial="hidden"

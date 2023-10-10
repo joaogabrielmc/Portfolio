@@ -2,9 +2,9 @@ import React from "react";
 import {
   Card,
   CardBody,
-  CardFooter,
+  // CardFooter,
+  // Button,
   Typography,
-  Button,
 } from "@material-tailwind/react";
 
 interface CardWithLinkProps {
@@ -19,16 +19,9 @@ const CardWithLink: React.FC<CardWithLinkProps> = ({
   imageUrl,
 }) => {
   return (
-    <Card className="mt-6 w-96">
+    <Card className="mt-6 md:w-96 w-full">
       <CardBody>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="mb-4 h-12 w-12 text-gray-900"
-        >
-          {imageUrl}
-        </svg>
+        <img src={imageUrl} alt={title} className="mb-4 h-16 w-16 text-black" />
         <Typography variant="h5" color="blue-gray" className="mb-2">
           {title}
         </Typography>
