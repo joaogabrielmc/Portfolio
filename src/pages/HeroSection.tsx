@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Button, Typography } from "@material-tailwind/react";
-import { PiEyeBold } from "react-icons/pi";
 
 const HeroSection = () => {
   return (
