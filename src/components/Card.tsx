@@ -19,13 +19,17 @@ const CardWithLink: React.FC<CardWithLinkProps> = ({
   imageUrl,
 }) => {
   return (
-    <Card className="mt-6 md:w-96 w-full">
+    <Card className="mt-6 md:w-96 w-full bg-secondary">
       <CardBody>
-        <img src={imageUrl} alt={title} className="mb-4 h-16 w-16 text-black" />
-        <Typography variant="h5" color="blue-gray" className="mb-2">
+        <img src={imageUrl} alt={title} className="mb-4 h-16 w-16 text-white" />
+        <Typography
+          variant="h5"
+          color="white"
+          className="mb-2 font-baumans text-primary"
+        >
           {title}
         </Typography>
-        <Typography>{description}</Typography>
+        <Typography className="font-baimj text-white">{description}</Typography>
       </CardBody>
     </Card>
   );

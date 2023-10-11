@@ -84,9 +84,13 @@ export function TabsDefault() {
 
   return (
     <Tabs value="front">
-      <TabsHeader className="flex-col md:flex-row">
+      <TabsHeader className="flex-col md:flex-row bg-secondary">
         {data.map(({ label, value }) => (
-          <Tab key={value} value={value} className="font-popp text-xs">
+          <Tab
+            key={value}
+            value={value}
+            className="font-popp text-xs p-2 text-black "
+          >
             {label}
           </Tab>
         ))}
@@ -96,7 +100,7 @@ export function TabsDefault() {
           <TabPanel
             key={value}
             value={value}
-            className="flex justify-between md:flex-row flex-col	"
+            className="flex justify-between md:flex-row flex-col gap-4"
           >
             {typeof desc === "string" ? (
               <div>{desc}</div>
