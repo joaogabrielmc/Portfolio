@@ -23,13 +23,13 @@ export function TabsDefault() {
           title: "Web Development",
           description:
             "Criação de sites e aplicativos web modernos, incluindo funcionalidades front-end e back-end, utilizando tecnologias como HTML, CSS, JavaScript, React, Tailwind, etc.",
-          imageUrl: "/img/cards/optmizeWeb.png",
+          imageUrl: "/img/cards/web.png",
         },
         {
           title: "Otimização de Desempenho Web",
           description:
             "Aumento da velocidade de carregamento de sites, otimização de imagens e recursos, e implementação de melhores práticas para melhorar a experiência do usuário em sites.",
-          imageUrl: "/img/cards/webDev.png",
+          imageUrl: "/img/cards/optimizeWeb.png",
         },
       ],
     },
@@ -89,7 +89,7 @@ export function TabsDefault() {
           <Tab
             key={value}
             value={value}
-            className="font-popp text-xs p-2 text-black "
+            className="font-popp text-xs md:text-sm p-4 text-white active:bg-primary"
           >
             {label}
           </Tab>
@@ -100,7 +100,7 @@ export function TabsDefault() {
           <TabPanel
             key={value}
             value={value}
-            className="flex justify-between md:flex-row flex-col gap-4"
+            className="flex md:flex-row flex-col gap-4 justify-center"
           >
             {typeof desc === "string" ? (
               <div>{desc}</div>
