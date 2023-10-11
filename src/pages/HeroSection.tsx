@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
 import { Button, Typography } from "@material-tailwind/react";
 
 const HeroSection = () => {
@@ -8,13 +6,7 @@ const HeroSection = () => {
       className="bg-site md:h-screen h-auto bg-cover bg-center py-10 flex justify-center"
       id="home"
     >
-      <motion.div
-        variants={fadeIn("down", 0.6)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.2 }}
-        className="flex flex-col justify-center text-center pt-20 md:pt-0"
-      >
+      <div className="flex flex-col justify-center text-center pt-20 md:pt-0">
         <Typography
           variant="paragraph"
           color="white"
@@ -54,7 +46,7 @@ const HeroSection = () => {
             Fale Comigo
           </Button>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

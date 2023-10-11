@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { TabsDefault } from "../components/Tabs";
 import { Typography } from "@material-tailwind/react";
 
@@ -9,7 +8,7 @@ const Services = () => {
       id="services"
     >
       <div className="w-[80%]">
-        <motion.div className="text-center">
+        <div className="text-center">
           <Typography
             variant="h1"
             color="black"
@@ -24,7 +23,7 @@ const Services = () => {
           >
             Um pouco dos serviços que posso oferecer!
           </Typography>
-        </motion.div>
+        </div>
         <TabsDefault />;
       </div>
     </section>
