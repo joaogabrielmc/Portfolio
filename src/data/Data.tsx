@@ -59,28 +59,76 @@ export const ServicesData = {
   ],
 };
 
-export const servicesCard = [
+export const Services = [
   {
-    label: "UI/UX",
-    value: "UI/UX",
+    label: "Desenvolvimento de Sites",
+    value: "front",
     desc: [
       {
-        title: "DESENHO",
-        description: "teste1",
+        title: "UI/UX",
+        description:
+          "Criação de interfaces intuitivas, wireframes e melhoria da experiência do usuário.",
+        imageUrl: "/img/cards/ux.png",
+      },
+      {
+        title: "Web Development",
+        description:
+          "Criação de sites e aplicativos web modernos, incluindo funcionalidades front-end e back-end, utilizando tecnologias como HTML, CSS, JavaScript, React, Tailwind, etc.",
+        imageUrl: "/img/cards/web.png",
+      },
+      {
+        title: "Otimização de Desempenho Web",
+        description:
+          "Aumento da velocidade de carregamento de sites, otimização de imagens e recursos, e implementação de melhores práticas para melhorar a experiência do usuário em sites.",
+        imageUrl: "/img/cards/optimizeWeb.png",
+      },
+    ],
+  },
+  {
+    label: "Automatização de Serviços",
+    value: "back",
+    desc: [
+      {
+        title: "Programação RPA",
+        description:
+          "Extração e análise de dados, desenvolvimento de robôs de automação, integração de sistemas e automação de fluxo de trabalho",
+        imageUrl: "/img/cards/rpa.png",
+      },
+      {
+        title: "Dados",
+        description: "Extração e Análise de Dados",
+        imageUrl: "/img/cards/data.png",
+      },
+      {
+        title: "Bots",
+        description:
+          "Criação de bots RPA, geração de relatórios automatizados e mineração de dados",
+        imageUrl: "/img/cards/bots.png",
+      },
+    ],
+  },
+  {
+    label: "Tratamento de Dados",
+    value: "data",
+    desc: [
+      {
+        title: "Programação RPA",
+        description:
+          "Limpeza e preparação de dados, análise de dados e segurança de dados e privacidade.",
         imageUrl: "teste1",
       },
       {
-        title: "DESENHO1",
-        description: "teste12",
+        title: "Limpeza e Preparação de Dados",
+        description:
+          "Limpeza de dados brutos, formatação e criação de pipelines.",
         imageUrl: "teste12",
       },
       {
-        title: "DESENHO3",
-        description: "teste13",
+        title: "Análise de Dados",
+        description:
+          "Análise estatística, identificação de tendências e desenvolvimento de modelos preditivos.",
         imageUrl: "teste13",
       },
     ],
   },
 ];
-{
-}
