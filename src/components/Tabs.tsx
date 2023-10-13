@@ -16,7 +16,7 @@ export function TabsDefault() {
           <Tab
             key={value}
             value={value}
-            className="font-popp text-xs md:text-sm p-4 text-primary w-auto"
+            className="font-popp text-xs md:text-sm p-4 text-primary w-auto lg:w-full"
           >
             {label}
           </Tab>
@@ -27,7 +27,7 @@ export function TabsDefault() {
           <TabPanel
             key={value}
             value={value}
-            className="flex lg:flex-row flex-col gap-4 justify-center items-center"
+            className="flex lg:flex-row flex-col gap-4 justify-center items-center lg:items-stretch w-screen"
           >
             {typeof desc === "string" ? (
               <div>{desc}</div>
