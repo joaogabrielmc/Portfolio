@@ -4,7 +4,7 @@ import { Typography } from "@material-tailwind/react";
 const Services = () => {
   return (
     <section
-      className="flex justify-center min-h-[600px] w-full pt-10 bg-darkGray"
+      className="flex justify-center min-h-[700px] w-full pt-10 bg-darkGray"
       id="services"
     >
       <div className="w-auto">

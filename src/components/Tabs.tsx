@@ -27,7 +27,7 @@ export function TabsDefault() {
           <TabPanel
             key={value}
             value={value}
-            className="flex lg:flex-row flex-col gap-4 justify-center items-center lg:items-stretch w-screen"
+            className="flex lg:flex-row flex-col gap-4 justify-center items-center lg:items-stretch xl:w-auto lg:w-screen"
           >
             {typeof desc === "string" ? (
               <div>{desc}</div>
