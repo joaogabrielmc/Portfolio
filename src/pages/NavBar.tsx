@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLinks } from "../data/Data";
 import { List } from "../components/List";
 import { ArrowCircleRight, CirclesFour } from "@phosphor-icons/react";
+import { SocialLinks } from "../components/Social";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -96,6 +97,7 @@ const NavBar = () => {
                 </List>
               ))}
             </ul>
+            <SocialLinks />
           </section>
         </div>
       </nav>

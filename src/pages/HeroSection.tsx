@@ -1,27 +1,43 @@
+import codeTyping from "../assets/img/code-typing-animate.svg";
+import { TypeAnimation } from "react-type-animation";
+import { SocialLinks } from "../components/Social";
+
 const HeroSection = () => {
   return (
-    <section
-      className="bg-site md:h-screen h-screen bg-cover bg-center py-10 flex justify-center"
-      id="home"
-    >
-      <div className="flex flex-col justify-center text-center pt-20 md:pt-0">
-        <h3 className="text-white font-baimj leading-7 ssm:text-xl text-sm">
-          Bem vindo👋, Me chamo
-        </h3>
-        <h1 className="text-white font-baumans ssm:text-6xl text-5xl md:text-8xl">
-          João Coelho
-        </h1>
-        <h3 className="text-primary ssm:text-xl text-sm font-baimj leading-7">
-          FullStack Developer
-        </h3>
-        <div className="flex justify-center gap-5 p-5">
-          <button className="rounded transition delay duration-300 ssm:py-4 ssm:px-5 p-2 text-base bg-transparent border-2 border-primary text-primary hover:scale-125 hover:bg-primary hover:text-black">
-            Download CV
-          </button>
-          <button className="rounded transition delay duration-300 ssm:py-4 ssm:px-5 p-2 text-base bg-primary border-2 border-primary text-black hover:scale-125 hover:bg-transparent hover:text-primary">
-            Fale Comigo
-          </button>
+    <section className="bg-site bg-cover bg-center" id="home">
+      <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-10 h-screen">
+        <SocialLinks />
+        <div className="text-center lg:text-left ">
+          <h3 className="text-white font-baumans ssm:text-base">
+            Bem vindo👋, Me chamo
+          </h3>
+          <h1 className="text-5xl xl:text-7xl lg:text-5xl font-baimj text-white lg:leading-[4.25rem]">
+            João Coelho
+          </h1>
+          <TypeAnimation
+            sequence={[
+              "Front-End Developer",
+              2000,
+              "Back-End Developer",
+              2000,
+              "FullStack Developer",
+              2000,
+            ]}
+            speed={50}
+            className="text-primary font-baumans text-[20px] xl:text-[30px] lg:text-2xl "
+            repeat={Infinity}
+          />
+          {/* buttons */}
+          <div className="flex max-w-max gap-x-6 items-center mb-3 mx-auto lg:mx-0 pt-4 ">
+            <button className="rounded-none bg-transparent p-1.5 lg:p-2.5 border-2 border-primary text-primary transition delay duration-300 hover:scale-125 font-roboto  hover:bg-primary hover:text-black">
+              Download CV
+            </button>
+            <button className="rounded-none bg-primary p-1.5 lg:p-2.5 border-2 border-primary text-black font-black btn-link transition delay duration-300  font-roboto hover:scale-125 hover:bg-transparent hover:text-primary">
+              Fale Comigo
+            </button>
+          </div>
         </div>
+        <img src={codeTyping} className="lg:w-[32rem] w-64 lg:p-10" />
       </div>
     </section>
   );
