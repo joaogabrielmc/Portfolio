@@ -34,6 +34,27 @@ module.exports = withMT({
         site: "url('/img/herobg.jpg')",
       },
     },
+    tabsHeader: {
+      defaultProps: {
+        className: "",
+      },
+      styles: {
+        base: {
+          display: "flex",
+          position: "relative",
+          bg: "bg-primary",
+          bgOpacity: "bg-opacity-60",
+          borderRadius: "rounded-lg",
+          p: "p-1",
+        },
+        horizontal: {
+          flexDirection: "flex-row",
+        },
+        vertical: {
+          flexDirection: "flex-col",
+        },
+      },
+    },
   },
   plugins: [],
 });

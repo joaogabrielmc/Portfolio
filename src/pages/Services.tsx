@@ -1,28 +1,19 @@
 import { TabsDefault } from "../components/Tabs";
-import { Typography } from "@material-tailwind/react";
 
 const Services = () => {
   return (
     <section
-      className="flex justify-center min-h-[700px] w-full pt-10 bg-darkGray"
+      className="flex justify-center h-auto w-full pt-10 bg-darkGray"
       id="services"
     >
       <div className="w-auto">
         <div className="text-center">
-          <Typography
-            variant="h1"
-            color="white"
-            className="mb-4 text-3xl md:text-7xl font-baimj"
-          >
+          <h1 className="mb-4 text-3xl md:text-7xl font-baimj text-white">
             Serviços
-          </Typography>
-          <Typography
-            variant="h2"
-            color="white"
-            className="mb-4 text-sm md:text-base leading-3 font-roboto"
-          >
+          </h1>
+          <h2 className="mb-4 text-sm md:text-base leading-3 font-roboto text-white">
             Um pouco dos serviços que posso oferecer!
-          </Typography>
+          </h2>
         </div>
         <TabsDefault />;
       </div>

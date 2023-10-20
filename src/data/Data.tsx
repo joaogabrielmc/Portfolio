@@ -79,22 +79,22 @@ export const Services = [
     value: "data",
     desc: [
       {
-        title: "Programação RPA",
+        title: "Limpeza e Análise",
         description:
           "Limpeza e preparação de dados, análise de dados e segurança de dados e privacidade.",
-        imageUrl: "teste1",
+        imageUrl: "/img/cards/analise.png",
       },
       {
         title: "Limpeza e Preparação de Dados",
         description:
           "Limpeza de dados brutos, formatação e criação de pipelines.",
-        imageUrl: "teste12",
+        imageUrl: "/img/cards/dados.png",
       },
       {
         title: "Análise de Dados",
         description:
           "Análise estatística, identificação de tendências e desenvolvimento de modelos preditivos.",
-        imageUrl: "teste13",
+        imageUrl: "/img/cards/big-data.png",
       },
     ],
   },
