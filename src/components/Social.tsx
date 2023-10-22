@@ -1,7 +1,7 @@
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 interface SocialLinksProps {
-  className?: string; // Uma classe CSS opcional
+  className?: string; 
 }
 
 export const SocialLinks: React.FC<SocialLinksProps> = (props) => {

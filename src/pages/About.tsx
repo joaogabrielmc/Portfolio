@@ -1,7 +1,5 @@
 import Photo from "../assets/img/photo.svg";
 import { Image } from "../components/Image";
-
-import { Text } from "../components/Text";
 import { AboutText } from "../data/Data";
 
 const About = () => {
@@ -20,9 +18,9 @@ const About = () => {
 
         <div className="text-white md:w-[580px] w-auto text-center lg:text-start">
           <h1 className="text-6xl font-baimj p-1">Sobre mim</h1>
-          <Text as="p" className="md:text-xl p-1 font-roboto leading-8 md:mt-3">
+          <p className="md:text-xl p-1 font-roboto leading-8 md:mt-3">
             {AboutText}
-          </Text>
+          </p>
         </div>
       </div>
     </section>

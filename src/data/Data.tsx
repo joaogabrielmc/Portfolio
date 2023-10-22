@@ -99,3 +99,72 @@ export const Services = [
     ],
   },
 ];
+// eslint-disable-next-line react-refresh/only-export-components
+export const skillsData = [
+  {
+    imageUrl: "/img/skills/html.png",
+    title: "html",
+  },
+  {
+    imageUrl: "/img/skills/css.png",
+    title: "css",
+  },
+  {
+    imageUrl: "/img/skills/javascript.png",
+    title: "javascript",
+  },
+  {
+    imageUrl: "/img/skills/node.png",
+    title: "node",
+  },
+  {
+    imageUrl: "/img/skills/react.png",
+    title: "react",
+  },
+  {
+    imageUrl: "/img/skills/typescript.png",
+    title: "typescript",
+  },
+  {
+    imageUrl: "/img/skills/postgre.png",
+    title: "postgre",
+  },
+  {
+    imageUrl: "/img/skills/git.png",
+    title: "git",
+  },
+  // repetido
+  {
+    imageUrl: "/img/skills/html.png",
+    title: "html",
+  },
+  {
+    imageUrl: "/img/skills/css.png",
+    title: "css",
+  },
+  {
+    imageUrl: "/img/skills/javascript.png",
+    title: "javascript",
+  },
+  {
+    imageUrl: "/img/skills/node.png",
+    title: "node",
+  },
+  {
+    imageUrl: "/img/skills/react.png",
+    title: "react",
+  },
+  {
+    imageUrl: "/img/skills/typescript.png",
+    title: "typescript",
+  },
+  {
+    imageUrl: "/img/skills/postgre.png",
+    title: "postgre",
+  },
+  {
+    imageUrl: "/img/skills/git.png",
+    title: "git",
+  },
+  
+];

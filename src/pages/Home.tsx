@@ -2,7 +2,7 @@ import About from "../pages/About";
 import HeroSection from "../pages/HeroSection";
 import Services from "../pages/Services";
 import Projects from "../pages/Projects";
-import Habilities from "./Habilities";
+import Skills from "./Skills";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <HeroSection />
       <About />
       <Services />
-      <Habilities />
+      <Skills />
       <Projects />
     </>
   );

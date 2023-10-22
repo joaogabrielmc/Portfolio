@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
+import withMT from "@material-tailwind/react/utils/withMT";
 
-module.exports = withMT({
+export default withMT({
   content: [
     "./index.html",
     "./src/**/*.{vue,js,jsx,ts,tsx}",
@@ -27,7 +27,7 @@ module.exports = withMT({
         primary: "#5CFF4D",
         secondary: "#023535",
         gray: "#D9D9D9",
-        darkGray: "#0C0C0F",
+        darkGray: "#0F0F12",
         lblue: "#A1FFD0",
       },
       backgroundImage: {
