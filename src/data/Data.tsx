@@ -14,7 +14,7 @@ export const NavLinks = [
   },
   {
     name: "Habilidades",
-    url: "#habilities",
+    url: "#skills",
   },
   {
     name: "Portfolio",
@@ -150,6 +150,4 @@ export const skillsData = [
     imageUrl: "/img/skills/ps.png",
     title: "Photoshop",
   },
-  
 ];
-

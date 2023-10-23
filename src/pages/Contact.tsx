@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section
       className="w-auto h-auto bg-darkGray text-white md:flex justify-center md:pt-2 items-center py-5"
-      id="portfolio"
+      id="contact"
     >
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -20,13 +20,17 @@ const Contact = () => {
         <a
           className="flex gap-2 items-center  justify-center md:justify-normal pt-4"
           href="mailto:joaog.martinsc@gmail.com"
+          target="_blank"
+          rel="noreferrer"
         >
           <BsFillEnvelopeFill />
           joaog.martinsc@gmail.com
         </a>
         <a
           className="flex gap-2 items-center justify-center md:justify-normal "
-          href=""
+          href="https://www.linkedin.com/in/joaogabrielcoelho/"
+          target="_blank"
+          rel="noreferrer"
         >
           <BsLinkedin />
           João Gabriel
@@ -34,6 +38,8 @@ const Contact = () => {
         <a
           className="flex gap-2 items-center justify-center md:justify-normal "
           href="https://github.com/joaogabrielmc"
+          target="_blank"
+          rel="noreferrer"
         >
           <BsGithub />
           joaogabrielmc

@@ -4,7 +4,10 @@ import { fadeIn } from "../variants.ts";
 
 const Skills = () => {
   return (
-    <section className="h-auto bg-darkGray p-16 text-center flex flex-col justify-center items-center">
+    <section
+      className="h-auto bg-darkGray p-16 text-center flex flex-col justify-center items-center"
+      id="skills"
+    >
       <motion.h1
         variants={fadeIn("up", 0.2)}
         initial="hidden"
@@ -24,8 +27,12 @@ const Skills = () => {
         {skillsData.map(({ imageUrl, title }) => (
           <>
             <div className="">
-              <img src={imageUrl} alt={title} className="h-20 w-h-20 p-2 " />
-              <h2 className="text-white font-baimj uppercase text-center">
+              <img
+                src={imageUrl}
+                alt={title}
+                className="h-20 w-h-20 p-2 transition hover:scale-110"
+              />
+              <h2 className="text-white font-baimj uppercase text-center ">
                 {title}
               </h2>
             </div>

@@ -38,10 +38,12 @@ const HeroSection = () => {
           {/* buttons */}
           <div className="flex max-w-max gap-x-6 items-center mb-3 mx-auto lg:mx-0 pt-4 ">
             <button className="rounded-none bg-transparent p-1.5 lg:p-2.5 border-2 border-primary text-primary transition delay duration-300 hover:scale-125 font-roboto  hover:bg-primary hover:text-black">
-              Download CV
+              <a href="/joaocoelho.pdf" target="_blank" rel="noreferrer">
+                Download CV
+              </a>
             </button>
             <button className="rounded-none bg-primary p-1.5 lg:p-2.5 border-2 border-primary text-black font-black btn-link transition delay duration-300  font-roboto hover:scale-125 hover:bg-transparent hover:text-primary">
-              Fale Comigo
+              <a href="#contact">Fale Comigo</a>
             </button>
           </div>
         </motion.div>
