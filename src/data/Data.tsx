@@ -140,7 +140,7 @@ export const skillsData = [
   },
   {
     imageUrl: "/img/skills/prisma.png",
-    title: "Prima.io",
+    title: "Prisma.io",
   },
   {
     imageUrl: "/img/skills/figma.png",
