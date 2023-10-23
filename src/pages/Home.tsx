@@ -3,6 +3,8 @@ import HeroSection from "../pages/HeroSection";
 import Services from "../pages/Services";
 import Projects from "../pages/Projects";
 import Skills from "./Skills";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <Services />
       <Skills />
       <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 };

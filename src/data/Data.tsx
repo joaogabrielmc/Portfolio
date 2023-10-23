@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 export const NavLinks = [
   {
     name: "Início",
@@ -99,7 +100,6 @@ export const Services = [
     ],
   },
 ];
-// eslint-disable-next-line react-refresh/only-export-components
 export const skillsData = [
   {
     imageUrl: "/img/skills/html.png",
@@ -133,38 +133,23 @@ export const skillsData = [
     imageUrl: "/img/skills/git.png",
     title: "git",
   },
-  // repetido
-  {
-    imageUrl: "/img/skills/html.png",
-    title: "html",
-  },
-  {
-    imageUrl: "/img/skills/css.png",
-    title: "css",
-  },
+
   {
     imageUrl: "/img/skills/javascript.png",
-    title: "javascript",
+    title: "nestJs",
   },
   {
-    imageUrl: "/img/skills/node.png",
-    title: "node",
+    imageUrl: "/img/skills/prisma.png",
+    title: "Prima.io",
   },
   {
-    imageUrl: "/img/skills/react.png",
-    title: "react",
+    imageUrl: "/img/skills/figma.png",
+    title: "Figma",
   },
   {
-    imageUrl: "/img/skills/typescript.png",
-    title: "typescript",
-  },
-  {
-    imageUrl: "/img/skills/postgre.png",
-    title: "postgre",
-  },
-  {
-    imageUrl: "/img/skills/git.png",
-    title: "git",
+    imageUrl: "/img/skills/ps.png",
+    title: "Photoshop",
   },
   
 ];
+
