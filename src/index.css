@@ -11,11 +11,6 @@ a.active::before {
   width: 100%;
 }
 
-.link-button:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s ease-in-out;
-}
-
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -37,19 +32,16 @@ input[type="number"] {
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 16px;
+  width: 5px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #0f0f12;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #4ef042;
-  border-radius: 10px;
-  border: 3px solid #ffffff;
 }
-
 
 .config-grid {
   display: grid;
