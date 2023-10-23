@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { SocialLinks } from "../components/Social";
 import { fadeIn } from "../variants";
 import { motion } from "framer-motion";
+import ReactFloaterJs from "react-floaterjs";
 
 const HeroSection = () => {
   return (
@@ -47,14 +48,17 @@ const HeroSection = () => {
             </button>
           </div>
         </motion.div>
-        <motion.img
-          variants={fadeIn("left", 0.2)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
-          src={codeTyping}
-          className="lg:w-[32rem] w-64 lg:p-10"
-        />
+
+        <ReactFloaterJs>
+          <motion.img
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.2 }}
+            src={codeTyping}
+            className="lg:w-[32rem] w-64 lg:p-10"
+          />
+        </ReactFloaterJs>
       </div>
     </section>
   );
