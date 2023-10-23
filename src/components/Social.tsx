@@ -23,7 +23,11 @@ export const SocialLinks: React.FC<SocialLinksProps> = (props) => {
       >
         <BsLinkedin className="text-primary transition delay duration-300 hover:scale-125 hover:text-white" />
       </a>
-      <a href="https://github.com/joaogabrielmc" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/joaogabrielmc"
+        target="_blank"
+        rel="noreferrer"
+      >
         <BsGithub className="text-primary transition delay duration-300 hover:scale-125 hover:text-white" />
       </a>
     </div>
