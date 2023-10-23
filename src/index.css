@@ -3,11 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-a.active {
+Link.active {
   color: #5cff4d !important;
 }
 
-a.active::before {
+Link.active::before {
   width: 100%;
 }
 

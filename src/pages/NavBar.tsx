@@ -3,6 +3,7 @@ import { NavLinks } from "../data/Data";
 import { List } from "../components/List";
 import { ArrowCircleRight, CirclesFour } from "@phosphor-icons/react";
 import { SocialLinks } from "../components/Social";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -41,12 +42,17 @@ const NavBar = () => {
           <ul className="flex items-center justify-center gap-4 relative  before:h-0.5 before:absolute before:bottom-0 before:left-0 before:bg-darkGray">
             {NavLinks.map((navlink, index) => (
               <List className="w-full text-base" key={index}>
-                <a
-                  href={navlink.url}
-                  className={`relative inline-block px-2 whitespace-nowrap text-white uppercase text-xs font-bold transition-all duration-200 hover:text-primary`}
+                <Link
+                  to={navlink.url}
+                  activeClass="active"
+                  className={`relative cursor-pointer inline-block px-2 whitespace-nowrap text-white uppercase text-xs font-bold transition-all duration-200 hover:text-primary before:text-primary`}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                 >
                   {navlink.name}
-                </a>
+                </Link>
               </List>
             ))}
           </ul>

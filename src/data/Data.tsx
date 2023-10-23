@@ -2,27 +2,27 @@
 export const NavLinks = [
   {
     name: "Início",
-    url: "#home",
+    url: "home",
   },
   {
     name: "Sobre Mim",
-    url: "#about",
+    url: "about",
   },
   {
     name: "Serviços",
-    url: "#services",
+    url: "services",
   },
   {
     name: "Habilidades",
-    url: "#skills",
+    url: "skills",
   },
   {
     name: "Portfolio",
-    url: "#portfolio",
+    url: "portfolio",
   },
   {
     name: "Contate-me",
-    url: "#contact",
+    url: "contact",
   },
 ];
 export const AboutText = `Profissional da área da Tecnologia da Informação com experiência em suporte. Jovem e estudante de progamação com foco em fullstack Web, desde novo sempre me empolguei com o futuro, com as tecnologias, desde então venho estudando e me esforçando para entrar na área. Possuo foco em desenvolvimento em JavaScript, TypeScript, React, Node.js. Me considero uma pessoa ágil, minha paixão pelo saber, faz com que eu consiga aprender coisas novas de maneira rápida, e sempre estou pronto para superar desafios e fazer mudanças.`;
