@@ -15,7 +15,7 @@ const Services = () => {
             Um pouco dos serviços que posso oferecer!
           </h2>
         </div>
-        <TabsDefault />;
+        <TabsDefault />
       </div>
     </section>
   );
