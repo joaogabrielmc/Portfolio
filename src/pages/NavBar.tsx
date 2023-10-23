@@ -44,8 +44,8 @@ const NavBar = () => {
               <List className="w-full text-base" key={index}>
                 <Link
                   to={navlink.url}
-                  activeClass="active"
                   className={`relative cursor-pointer inline-block px-2 whitespace-nowrap text-white uppercase text-xs font-bold transition-all duration-200 hover:text-primary before:text-primary`}
+                  activeClass="active"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -93,13 +93,18 @@ const NavBar = () => {
             <ul className="flex flex-col gap-3 pl-5">
               {NavLinks.map((navlink, index) => (
                 <List className="w-full text-base" key={index}>
-                  <a
-                    href={navlink.url}
+                  <Link
+                    to={navlink.url}
                     onClick={handleToggle}
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
                     className={`relative overflow-hidden inline-block text-white before:w-full before:h-0.5 before:bg-color2 before:absolute before:bottom-0 before:-left-full before:rounded-full before:transition-all before:duration-200 before:ease-in hover:before:left-0 `}
                   >
                     {navlink.name}
-                  </a>
+                  </Link>
                 </List>
               ))}
             </ul>
