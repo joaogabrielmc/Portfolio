@@ -3,7 +3,7 @@ import { NavLinks } from "../data/Data";
 import { List } from "../components/List";
 import { ArrowCircleRight, CirclesFour } from "@phosphor-icons/react";
 import { SocialLinks } from "../components/Social";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
