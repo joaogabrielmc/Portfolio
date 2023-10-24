@@ -100,6 +100,7 @@ export const Services = [
     ],
   },
 ];
+
 export const skillsData = [
   {
     imageUrl: "/img/skills/html.png",

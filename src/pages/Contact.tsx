@@ -33,7 +33,7 @@ const Contact = () => {
           rel="noreferrer"
         >
           <BsLinkedin />
-          João Gabriel
+          João Coelho
         </a>
         <a
           className="flex gap-2 items-center justify-center md:justify-normal "

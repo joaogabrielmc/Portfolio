@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
-import { motion } from "framer-motion";
 
 interface CardWithLinkProps {
   title: string;
@@ -15,7 +14,7 @@ const CardWithLink: React.FC<CardWithLinkProps> = ({
 }) => {
   return (
     <Card className="mt-6 md:w-96 w-full bg-black/50">
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+      <div>
         <CardBody>
           <img
             src={imageUrl}
@@ -33,7 +32,7 @@ const CardWithLink: React.FC<CardWithLinkProps> = ({
             {description}
           </Typography>
         </CardBody>
-      </motion.div>
+      </div>
     </Card>
   );
 };

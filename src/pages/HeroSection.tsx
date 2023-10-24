@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { SocialLinks } from "../components/Social";
 import { fadeIn } from "../variants";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const HeroSection = () => {
   return (
@@ -42,8 +43,18 @@ const HeroSection = () => {
                 Download CV
               </a>
             </button>
-            <button className="rounded-none bg-primary p-1.5 lg:p-2.5 border-2 border-primary text-black font-black btn-link transition delay duration-300  font-roboto hover:scale-125 hover:bg-transparent hover:text-primary">
-              <a href="#contact">Fale Comigo</a>
+            <button className="">
+              <Link
+                to={"contact"}
+                className={`rounded-none bg-primary p-1.5 lg:p-2.5 border-2 border-primary text-black font-black btn-link transition delay duration-300  font-roboto hover:scale-125 hover:bg-transparent hover:text-primary`}
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Fale Comigo
+              </Link>
             </button>
           </div>
         </motion.div>
