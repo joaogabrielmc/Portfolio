@@ -15,6 +15,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <div className="relative h-full w-full">
       <img src={imageUrl} alt={title} className="h-full w-full object-cover" />
+
       <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
         <div className="w-3/4 text-center md:w-2/4">
           <Typography
