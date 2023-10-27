@@ -43,10 +43,10 @@ const HeroSection = () => {
                 Download CV
               </a>
             </button>
-            <button className="">
+            <button className="rounded-none bg-primary p-1.5 lg:p-2.5 border-2 border-primary text-black font-black btn-link transition delay duration-300  font-roboto hover:scale-125 hover:bg-transparent hover:text-primary">
               <Link
                 to={"contact"}
-                className={`rounded-none bg-primary p-1.5 lg:p-2.5 border-2 border-primary text-black font-black btn-link transition delay duration-300  font-roboto hover:scale-125 hover:bg-transparent hover:text-primary`}
+                className={``}
                 activeClass="active"
                 spy={true}
                 smooth={true}
