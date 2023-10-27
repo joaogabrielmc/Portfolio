@@ -108,7 +108,6 @@ const NavBar = () => {
                 </List>
               ))}
             </ul>
-            <SocialLinks />
           </section>
         </div>
       </nav>
