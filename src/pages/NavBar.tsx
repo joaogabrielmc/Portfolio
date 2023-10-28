@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { NavLinks } from "../data/Data";
 import { List } from "../components/List";
 import { ArrowCircleRight, CirclesFour } from "@phosphor-icons/react";
-import { SocialLinks } from "../components/Social";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
