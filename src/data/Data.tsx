@@ -136,7 +136,7 @@ export const skillsData = [
   },
 
   {
-    imageUrl: "/img/skills/javascript.png",
+    imageUrl: "/img/skills/nest.svg",
     title: "nestJs",
   },
   {
